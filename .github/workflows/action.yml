@@ -22,6 +22,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Weather Report
           body: file://result.html
-          to: 78552423@qq.com
+          to: 78552423@qq.com,${{ secrets.MAIL_USERNAME }}
           from: GitHub Actions
           content_type: text/html
